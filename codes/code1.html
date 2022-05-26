@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>test</h2>
+  </body>
+  <script>
+    //If we live 80 years then how many years,month,days we have coding exercise;
+
+    function life(age) {
+      var yearsremain = 80 - age;
+      var monthremain = yearsremain * 12;
+      var daysremain = yearsremain * 365;
+      console.log(
+        "You have " +
+          yearsremain +
+          "years," +
+          " " +
+          monthremain +
+          "months" +
+          " " +
+          "and" +
+          " " +
+          daysremain +
+          "days remaining!"
+      );
+    }
+    life(23);
+  </script>
+</html>

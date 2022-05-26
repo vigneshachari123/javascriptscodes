@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //Creating BMI (Body Mass index) Calculator, It's a  way of finding body fat.
+    //formula BMI = Weight(kg)/Height^2(m2)
+
+    function calculate(weight, height) {
+      var bmi = weight / Math.pow(height, 2);
+      return Math.round(bmi);
+    }
+
+    var value = calculate(100, 5);
+    console.log(value);
+  </script>
+</html>

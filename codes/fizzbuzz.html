@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    /*take the numbers from 1 to 10 if it's devisible by 2 it should print "fizz"
+      if its devisible by 3 it should print "buzz"
+     and if its devisible by both then print "fizzbuzz*/
+
+    var arr = [];
+
+    function fizzbuzz() {
+      for (var i = 1; i <= 15; i++) {
+        if (i % 2 == 0 && i % 3 == 0) {
+          arr.push("fizzbuzz");
+        } else if (i % 2 == 0) {
+          arr.push("fizz");
+        } else if (i % 3 == 0) {
+          arr.push("buzz");
+        } else {
+          arr.push(i);
+        }
+      }
+
+      return arr;
+    }
+    console.log(fizzbuzz());
+
+    /*using while loop
+    var arr = [];
+    var i = 1;
+
+    function fizzbuzz() {
+      while (i <= 10) {
+        if (i % 2 == 0 && i % 3 == 0) {
+          arr.push("fizzbuzz");
+        } else if (i % 2 == 0) {
+          arr.push("fizz");
+        } else if (i % 3 == 0) {
+          arr.push("buzz");
+        } else {
+          arr.push(i);
+        }
+        i++;
+      }
+      return arr;
+    }
+    console.log(fizzbuzz());*/
+  </script>
+</html>
